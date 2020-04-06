@@ -1,0 +1,122 @@
+<?php 
+session_start();
+?>
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/animate.css">
+<title>Kinder Polyfarms - Buy 100% orgainc fruits and vegetables online</title>
+</head>
+<body>
+
+<?php 
+include('./part/nav.php');
+?>
+
+<br><br>
+
+<div class="container-fluid mt-4 py-4 first shadow">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-7 col-lg-6 py-5">
+				<h4>Extra 50% off for all winter foods</h4>
+				<h2 class="line">Eat <span class="green">Organic foods</span>
+				<br>
+				 & Live your life
+				 <br>
+				 <span class="green">Healthily.</span></h2>
+				<div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis labore quibusdam ad cum, doloremque dicta optio.</div>
+				<a href="./shop.php" class="button mt-1"><button>Show Now !</button></a>
+			</div>
+			<div class="col-sm-12 col-md-5 col-lg-6">
+				<img src="./img/1.png">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid second">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4 p-4 sec-inside">
+				<div class="count">01</div>
+				<div class="img"><img src="./img/015-farmer-1.png"></div>
+				<div class="heading">Farming With Love</div>
+				<div class="text">How your food is grown can have a major impact on your health as well as the environment. </div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 p-4 active shadow sec-inside">
+				<div class="count">02</div>
+				<div class="img"><img src="./img/013-delivery-truck.png"></div>
+				<div class="heading">Next Day Delivery</div>
+				<div class="text">Fresh and cheap organic products will be delivered to your home on the same or the next day. </div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4 p-4 sec-inside">
+				<div class="count">03</div>
+				<div class="img"><img src="./img/016-vegetables.png"></div>
+				<div class="heading">Without Pesticides</div>
+				<div class="text">Organic food means avoiding all artificial chemicals or genetically modified organisms. </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(".sec-inside").hover(function(){
+	$(".active").removeClass("shadow");
+	$(".active").removeClass("jackInTheBox");
+	$(".active").removeClass("active");
+	$(this).addClass("animated");
+	$(this).addClass("jackInTheBox");
+	$(this).addClass("active");
+	$(this).addClass("shadow");
+});
+</script>
+
+
+<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+loop:true,
+margin:10,
+autoplay:true,
+autoplayHoverPause:true,
+responsiveClass:true,
+responsive:{
+0:{
+items:1,
+nav:true
+},
+550:{
+items:2,
+nav:false
+},
+800:{
+items:3,
+nav:false
+},
+1000:{
+items:4,
+nav:true
+}
+}
+});
+</script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/jquery.appear.js"></script>
+</body>
+</html>
